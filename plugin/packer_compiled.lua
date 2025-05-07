@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/kennethboelter/.cache/nvim/packer_hererocks/2.1.1734355927/share/lua/5.1/?.lua;/Users/kennethboelter/.cache/nvim/packer_hererocks/2.1.1734355927/share/lua/5.1/?/init.lua;/Users/kennethboelter/.cache/nvim/packer_hererocks/2.1.1734355927/lib/luarocks/rocks-5.1/?.lua;/Users/kennethboelter/.cache/nvim/packer_hererocks/2.1.1734355927/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/kennethboelter/.cache/nvim/packer_hererocks/2.1.1734355927/lib/lua/5.1/?.so"
+local package_path_str = "/Users/kennethboelter/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?.lua;/Users/kennethboelter/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?/init.lua;/Users/kennethboelter/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?.lua;/Users/kennethboelter/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/kennethboelter/.cache/nvim/packer_hererocks/2.1.1741730670/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -74,25 +74,50 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["buffer_manager.nvim"] = {
+    loaded = true,
+    path = "/Users/kennethboelter/.local/share/nvim/site/pack/packer/start/buffer_manager.nvim",
+    url = "https://github.com/j-morano/buffer_manager.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/kennethboelter/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/Users/kennethboelter/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
   },
   ["cyberdream.nvim"] = {
     loaded = true,
     path = "/Users/kennethboelter/.local/share/nvim/site/pack/packer/start/cyberdream.nvim",
     url = "https://github.com/scottmckendry/cyberdream.nvim"
   },
+  everforest = {
+    loaded = true,
+    path = "/Users/kennethboelter/.local/share/nvim/site/pack/packer/start/everforest",
+    url = "https://github.com/sainnhe/everforest"
+  },
   ["git-blame.nvim"] = {
     loaded = true,
     path = "/Users/kennethboelter/.local/share/nvim/site/pack/packer/start/git-blame.nvim",
     url = "https://github.com/f-person/git-blame.nvim"
   },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/Users/kennethboelter/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/kennethboelter/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
+  },
+  ["melange-nvim"] = {
+    loaded = true,
+    path = "/Users/kennethboelter/.local/share/nvim/site/pack/packer/start/melange-nvim",
+    url = "https://github.com/savq/melange-nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,

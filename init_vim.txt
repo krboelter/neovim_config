@@ -1,40 +1,40 @@
-" Basic Setup
-set nocompatible
-syntax enable
-filetype plugin on
-
-" wildmenu might not be wanted
-set wildmenu
-
-" Set the path to include all files in the src directory when opening Neovim
-autocmd VimEnter * set path=src/**
-
-" Set relative number
-set relativenumber
-
-" Enable line numbers by default
-set number
-
-" Map 'mm' to run 'syntax sync fromstart'
-nnoremap mm :syntax sync fromstart<CR>
-
-" Ignore case in searches, unless search pattern contains uppercase letters
-set ignorecase
-set smartcase
-
-" Use the system clipboard for all yanks, deletes, changes, and puts
-set clipboard=unnamedplus
-
-" Set default indentation to 2 spaces
-set tabstop=2       " Number of spaces that a <Tab> counts for
-set shiftwidth=2    " Number of spaces to use for each step of (auto)indent
-set softtabstop=2   " Number of spaces a <Tab> counts for while editing
-set expandtab       " Use spaces instead of tabs
-
-" Enable automatic detection of file's indent settings
-set smartindent     " Automatically insert indent in new lines
-set autoindent      " Copy indent from current line when starting a new line
-set copyindent      " Copy the existing indentation
-filetype plugin indent on
-
-set cursorline
+" " Basic Setup
+" set nocompatible
+" syntax enable
+" filetype plugin on
+" 
+" " wildmenu might not be wanted
+" set wildmenu
+" 
+" " Set the path to include all files in the src directory when opening Neovim
+" autocmd VimEnter * set path=src/**
+" 
+" " Set relative number
+" set relativenumber
+" 
+" " Enable line numbers by default
+" set number
+" 
+" " Map 'mm' to run 'syntax sync fromstart'
+" nnoremap mm :syntax sync fromstart<CR>
+" 
+" " Ignore case in searches, unless search pattern contains uppercase letters
+" set ignorecase
+" set smartcase
+" 
+" " Use the system clipboard for all yanks, deletes, changes, and puts
+" set clipboard=unnamedplus
+" 
+" " Set default indentation to 2 spaces
+" set tabstop=2       " Number of spaces that a <Tab> counts for
+" set shiftwidth=2    " Number of spaces to use for each step of (auto)indent
+" set softtabstop=2   " Number of spaces a <Tab> counts for while editing
+" set expandtab       " Use spaces instead of tabs
+" 
+" " Enable automatic detection of file's indent settings
+" set smartindent     " Automatically insert indent in new lines
+" set autoindent      " Copy indent from current line when starting a new line
+" set copyindent      " Copy the existing indentation
+" filetype plugin indent on
+" 
+" set cursorline

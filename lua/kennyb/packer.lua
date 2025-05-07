@@ -7,7 +7,6 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  -- Simple plugins can be specified as strings
   use 'rstacruz/vim-closer'
 
   use {
@@ -16,13 +15,23 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- copilot
+  use 'github/copilot.vim'
+
   -- colorscheme
-  use {'scottmckendry/cyberdream.nvim'}
+  use 'scottmckendry/cyberdream.nvim'
+  use { 'ellisonleao/gruvbox.nvim' }
+  use { 'sainnhe/everforest' }
+  use { 'savq/melange-nvim' }
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  use('theprimeagen/harpoon')
-  use('mbbill/undotree')
-  use('tpope/vim-fugitive')
+  use 'theprimeagen/harpoon'
+  use 'mbbill/undotree'
+  use 'tpope/vim-fugitive'
+
+  -- buffer manager
+  use 'nvim-lua/plenary.nvim' -- basic dependency
+  use 'j-morano/buffer_manager.nvim'
 
   -- lsp
   use({'neovim/nvim-lspconfig'})
